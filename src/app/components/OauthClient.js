@@ -557,7 +557,7 @@ export class OauthClient extends React.Component {
 
                                     2. Click the <b>"EDIT"</b> button to edit the attributes that were initially set and
                                     rerun
-                                    the test suite. You'll have to click the <b>"RUN"</b> button again, to run the test
+                                    the test suite. You&#x27;ll have to click the <b>"RUN"</b> button again, to run the test
                                     suite with
                                     the updated attributes.
                                 </p>
