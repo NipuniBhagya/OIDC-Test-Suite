@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ * Copyright (c) 2018, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 import React from "react";
 import Paper from 'material-ui/Paper';
 import {MenuItem, RaisedButton, SelectField, TextField} from "material-ui";
@@ -124,13 +123,11 @@ export class FirstForm extends React.Component {
         if (this.state.pro_type == "Basic") {
             var load = 'response_type=' + response_type + '&client_id=' + clientId + '&scope=' + scope + '&redirect_uri=' + callBack + '&Use_pkce=no';
             window.location.href = "https://localhost:9443/oauth2/authorize?" + load;
-
         } else {
             var data = 'response_type=' + response_type + '&client_id=' + clientId + '&redirect_uri=' + callBack + '&nonce=' + nonce + '&scope=' + scope;
             var url = authEndpoint + "?" + data;
             sessionStorage.requestUrl = url;
             window.location.href = "https://localhost:9443/oauth2/authorize?" + data;
-
         }
 
     }
